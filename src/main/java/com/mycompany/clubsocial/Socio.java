@@ -199,9 +199,10 @@ public class Socio {
          String factura = mostrarFacturas();
         for (int i = 0; i < facturas.length; i++) {
             if (facturas[i] !=null) {
-                JOptionPane.showMessageDialog(null,"Sus consumos son: "+facturas[i].getConcepto()+"Con un valor de:"+facturas[i].getValor());
+                JOptionPane.showMessageDialog(null,"Su consumo #"+(i++)+" son: "+facturas[i].getConcepto()+"Con un valor de:"+facturas[i].getValor());
             }else {
-            JOptionPane.showMessageDialog(null,"No tienen comsumos ");}
+            JOptionPane.showMessageDialog(null,"No tiene comsumos ");
+            }
         }
         
     }
